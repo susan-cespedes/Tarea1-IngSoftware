@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sistemas De Información 1 </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/logodragon_prev_ui.png">
+</head>
+<body>
+    <script>
+        function mensaje ()
+        {
+            nombre= document.form1.txtnombre.value;
+          
+
+            if (nombre == false)
+          {
+            window.alert("DEBE INGRESAR SU NOMBRE SI NO NO SE PODRA ENVIAR EL MENSAJE")
+          }
+          else
+            window.alert("FORMULARIO ENVIADO, CORRECTAMENTE")
+        }
+
+    </script>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1> &lt Susan <span>Céspedes Lazcano</span>/&gt</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="index.html">INICIO</a></li>
+                            <li><a href="sobremi.html">SOBRE MI</a></li>
+                            <li><a href="index.html#habilidades">HOBBIES</a></li>
+                            <li><a href="index.html#proyectos">PELICULAS</a></li>
+                            <li><a href="index.html#proyectoos">LIBROS</a></li>
+                            <li><a href="contacto.html">CONTÁCTAME</a></li>
+                        </ul>
+                    </nav>
+                  
+                    
+                </div>
+            </header>
+           
+    </div>   
+    </section>
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="" name="form1">
+                <div class="fila mitad">
+                    <input type="text"  name="txtnombre" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="email" name="txtcorreo" placeholder="Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto" class="input-full">
+                </div>
+
+                <div class="fila">
+                    <select name="seleccion" >
+                        <option value="">SELECCIONAR GÉNERO...</option>
+
+                        <option value="HOMBRE">HOMBRE</option>
+                        <option value="MUJER">MUJER</option>
+                    </select> 
+                </div>
+
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar" onclick="mensaje();">
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="footer">
+        <footer>
+            <p>Susan Milenka Céspedes Lazcano</p>
+            <div class="redes">
+                <a href="https://wa.me/59165396143?text=Estoy %20Interesado%20en%20conocer%20tu%20sitio%20Web"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/susan_cespedesl/" target= "_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="https://www.facebook.com/susan.cespedes.39/" target= "_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+    
+        </footer>
+
+    </section>
+
+</body>
+</html>
